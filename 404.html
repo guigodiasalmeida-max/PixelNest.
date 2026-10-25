@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página não encontrada — PixelNest</title><meta name="theme-color" content="#060818">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#060818;color:#e8ebff;font:400 1.1rem/1.6 "Pixelify Sans",system-ui,sans-serif;min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem;
+background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:32px 32px}
+h1{font:400 clamp(3rem,14vw,7rem)/1 "Press Start 2P",monospace;margin:0 0 1rem;background:linear-gradient(135deg,#2f7bff,#c26bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{color:#a9b2e0;margin:.3rem 0 1.5rem}
+a{font:400 .7rem/1.4 'Press Start 2P',monospace;display:inline-block;min-height:44px;padding:.7rem 1.4rem;background:linear-gradient(135deg,#2f7bff,#8a5bff 55%,#c26bff);border:2px solid #b9a4ff;color:#fff;font-weight:700;text-decoration:none;box-shadow:0 4px 0 #3b2a9c}
+a:focus-visible{outline:3px solid #9ec3ff;outline-offset:3px}
+</style></head>
+<body><main><h1>404</h1><p><strong>Esta página não existe ou mudou de lugar.</strong></p><p>Volte ao catálogo e escolha um jogo.</p>
+<a id="home" href="/">Voltar ao PixelNest</a></main>
+<script>
+/* Em projeto do GitHub Pages (usuario.github.io/repositorio/) o início é "/repositorio/".
+   Se o site estiver na raiz de um domínio, deixe BASE como "/". Ajuste manualmente se precisar. */
+var BASE = null;
+if (BASE === null) {
+  var seg = location.pathname.split("/")[1];
+  BASE = (location.hostname.endsWith("github.io") && seg && location.pathname.split("/").length > 2) ? "/" + seg + "/" : "/";
+}
+document.getElementById("home").href = BASE + "index.html";
+</script></body></html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelNest — jogos de navegador</title>
+<meta name="description" content="Portal de jogos independentes para jogar direto no navegador, sem baixar nada.">
+<meta name="theme-color" content="#080A18">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PixelNest — jogos independentes">
+<meta property="og:description" content="Descubra jogos independentes para jogar direto no navegador.">
+<meta property="og:image" content="assets/capas/turno-da-noite.webp">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-base="" data-page="home">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div id="site-header"></div>
+<main id="conteudo">
+  <section class="hero wrap" aria-labelledby="hero-t">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> UM CATÁLOGO DE JOGOS AUTORAIS</p>
+      <h1 id="hero-t">Pequenos mundos.<br><span>Grandes aventuras.</span></h1>
+      <p>Descubra jogos independentes, escolha sua próxima aventura e jogue direto no navegador — sem downloads ou instalações.</p>
+      <div class="hero-cta"><a class="btn primary big" href="#jogos">Explorar jogos</a><a class="btn ghost big" href="#sobre">Sobre o PixelNest</a></div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-art-glow" aria-hidden="true"></div>
+      <div class="hero-art-label"><span class="live-dot"></span> SUA PRÓXIMA AVENTURA</div>
+      <div class="carts" id="carts" aria-label="Jogos em destaque"></div>
+      <div class="hero-art-foot"><span>FEITO PARA EXPLORAR</span><span class="pixel-spark" aria-hidden="true">✦</span></div>
+    </div>
+  </section>
+
+  <section class="wrap value-strip" aria-label="Sobre a experiência">
+    <div><span class="value-icon">01</span><p><strong>Abre no navegador</strong><small>Sem instalação</small></p></div>
+    <div><span class="value-icon">02</span><p><strong>Jogos diferentes</strong><small>Uma nova experiência a cada clique</small></p></div>
+    <div><span class="value-icon">03</span><p><strong>Seu ritmo, sua aventura</strong><small>Jogue quando quiser</small></p></div>
+  </section>
+
+  <section class="wrap sec" id="jogos" aria-labelledby="jogos-t">
+    <div class="section-heading">
+      <div><p class="eyebrow">ESCOLHA SUA PRÓXIMA FASE</p><h2 id="jogos-t">Explorar jogos</h2></div>
+      <span class="section-note">CATÁLOGO PIXELNEST <span aria-hidden="true">↘</span></span>
+    </div>
+    <div class="toolbar">
+      <div class="search"><label for="busca">Pesquisar por nome</label>
+        <input id="busca" type="search" placeholder="Digite o nome de um jogo" autocomplete="off"></div>
+      <div class="filters" role="group" aria-label="Filtrar por categoria"><div class="chips" id="chips"></div>
+        <button type="button" class="link-btn" id="limpar" hidden>Limpar filtros</button></div>
+    </div>
+    <p class="count" id="count" role="status" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <div class="empty px" id="vazio" hidden><p><strong>Nenhum jogo encontrado.</strong></p><p>Tente outro nome ou remova o filtro de categoria.</p><button type="button" class="btn primary" id="vazio-limpar">Limpar filtros</button></div>
+  </section>
+
+  <section class="wrap sec about" id="sobre" aria-labelledby="sobre-t">
+    <div class="about-copy"><p class="eyebrow">SOBRE O PROJETO</p><h2 id="sobre-t">Um lugar para descobrir jogos.</h2>
+      <p>O PixelNest reúne experiências independentes em um só lugar. Cada jogo tem sua própria página, informações de controles e opções para ampliar a tela.</p>
+      <p class="about-note">Escolha um jogo, descubra algo novo e aproveite a jornada.</p></div>
+    <div class="facts-panel"><div class="facts-pixel" aria-hidden="true">PN<span>✦</span></div><ul class="facts px"><li>Jogue direto no navegador</li><li>Controles explicados em cada página</li><li>Progresso local quando compatível com o jogo</li></ul></div>
+  </section>
+  <section class="wrap closing-cta">
+    <div><p class="eyebrow">PRONTO PARA JOGAR?</p><h2>Sua próxima aventura está a um clique.</h2><p>Explore o catálogo e encontre seu próximo jogo favorito.</p></div>
+    <a class="btn primary big" href="#jogos">Ver todos os jogos <span aria-hidden="true">↗</span></a>
+  </section>
+</main>
+<div id="site-footer"></div>
+<noscript><p style="padding:1rem;text-align:center">O PixelNest precisa de JavaScript para listar e abrir os jogos.</p></noscript>
+<script src="js/games.js"></script><script src="js/layout.js"></script><script src="js/main.js"></script>
+</body>
+</html>
